@@ -1,6 +1,7 @@
 import { Link, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
+import PartDetails from './pages/PartDetails'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main className="page">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/parts/:id" element={<PartDetails />} />
           {/* Any other URL: 404 page */}
           <Route
             path="*"

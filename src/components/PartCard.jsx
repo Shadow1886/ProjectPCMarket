@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom'
+
 // Shows one part as a card. The part comes from the parent as a prop.
 function PartCard({ part }) {
   return (
-    <div className="card">
+    <Link to={`/parts/${part.id}`} className="card">
       <img src={`/images/${part.category}.svg`} alt={part.category} className="card-image" />
 
       <div className="card-body">
@@ -10,7 +12,7 @@ function PartCard({ part }) {
         <p className="muted">{part.brand}</p>
         <p className="price">€{part.price}</p>
       </div>
-    </div>
+    </Link>
   )
 }
 
