@@ -120,11 +120,87 @@ img {
   border-color: var(--danger);
 }
 
-/* ---------- Temporary welcome page ---------- */
+/* ---------- Page layout ---------- */
 
-.welcome {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+.page {
+  min-height: calc(100vh - 150px);
+  padding: 40px 0 64px;
+}
+
+.center {
   text-align: center;
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.nav-links a {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+  background: var(--surface);
+  text-decoration: none;
+}
+
+/* NavLink adds the class "active" to the link of the current page */
+.nav-links a.active {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- 404 page ---------- */
+
+.big-number {
+  margin: 30px 0 4px;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
