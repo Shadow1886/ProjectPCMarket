@@ -25,6 +25,7 @@ function Navbar() {
           {/* Different links for logged-in users and guests */}
           {user ? (
             <>
+              <NavLink to="/create">Add Part</NavLink>
               <span className="username">Hi, {user.username}</span>
               <button className="btn" onClick={handleLogout}>
                 Logout
