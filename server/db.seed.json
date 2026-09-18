@@ -1,0 +1,200 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "demo@pcforge.com",
+      "password": "$2a$10$bq1L8bqN9/xrzbSIGnh5VuZtZqeDuScFrBPV5sszVVvQPXfhjeVQ6",
+      "username": "DemoUser",
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "email": "ivan@pcforge.com",
+      "password": "$2a$10$FTddaVXqxeUJqrxCk6z8eepQDIIoZlGlz7PMXXyQFvBMX2.IZ.EIi",
+      "username": "Ivan",
+      "createdAt": "2026-09-03T12:30:00.000Z"
+    }
+  ],
+  "parts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "AMD Ryzen 7 9800X3D",
+      "brand": "AMD",
+      "category": "cpu",
+      "price": 479,
+      "description": "The go-to gaming CPU thanks to its large 3D V-Cache. Excellent frame rates and efficiency."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "Intel Core Ultra 7 265K",
+      "brand": "Intel",
+      "category": "cpu",
+      "price": 299,
+      "description": "Strong multi-core performance for streaming, editing and productivity work."
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "name": "AMD Ryzen 5 9600X",
+      "brand": "AMD",
+      "category": "cpu",
+      "price": 219,
+      "description": "Great value mid-range processor for 1080p and 1440p gaming."
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "brand": "NVIDIA",
+      "category": "gpu",
+      "price": 849,
+      "description": "High-end 1440p and entry 4K gaming card with excellent ray tracing."
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "name": "AMD Radeon RX 9070 XT",
+      "brand": "AMD",
+      "category": "gpu",
+      "price": 699,
+      "description": "Fantastic price-to-performance for 1440p gaming."
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "name": "NVIDIA GeForce RTX 5060",
+      "brand": "NVIDIA",
+      "category": "gpu",
+      "price": 329,
+      "description": "Budget-friendly card for smooth 1080p gaming."
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "name": "ASUS ROG Strix B850-F Gaming WiFi",
+      "brand": "ASUS",
+      "category": "motherboard",
+      "price": 319,
+      "description": "Feature-packed AM5 board with premium VRMs and great connectivity."
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "name": "MSI MAG Z890 Tomahawk WiFi",
+      "brand": "MSI",
+      "category": "motherboard",
+      "price": 289,
+      "description": "Solid Intel platform board with excellent cooling on the VRM."
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "name": "Corsair Vengeance DDR5 32GB (2x16GB) 6000MT/s",
+      "brand": "Corsair",
+      "category": "ram",
+      "price": 119,
+      "description": "The sweet spot kit for modern gaming systems."
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "name": "G.Skill Trident Z5 RGB 64GB (2x32GB) 6400MT/s",
+      "brand": "G.Skill",
+      "category": "ram",
+      "price": 229,
+      "description": "High-capacity kit for creators, VMs and heavy multitasking."
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "name": "Samsung 990 Pro 2TB",
+      "brand": "Samsung",
+      "category": "storage",
+      "price": 169,
+      "description": "One of the fastest and most reliable PCIe 4.0 SSDs."
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "name": "WD Black SN850X 1TB",
+      "brand": "Western Digital",
+      "category": "storage",
+      "price": 89,
+      "description": "Popular gaming SSD with consistent performance."
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "name": "Crucial T705 2TB",
+      "brand": "Crucial",
+      "category": "storage",
+      "price": 259,
+      "description": "Blazing-fast PCIe 5.0 drive for enthusiasts."
+    },
+    {
+      "id": 14,
+      "userId": 1,
+      "name": "Corsair RM850x (2024)",
+      "brand": "Corsair",
+      "category": "psu",
+      "price": 139,
+      "description": "Quiet, efficient power supply ready for modern GPUs."
+    },
+    {
+      "id": 15,
+      "userId": 2,
+      "name": "be quiet! Pure Power 12 M 750W",
+      "brand": "be quiet!",
+      "category": "psu",
+      "price": 99,
+      "description": "Silent and reliable PSU for mid-range builds."
+    },
+    {
+      "id": 16,
+      "userId": 1,
+      "name": "Lian Li Lancool 217",
+      "brand": "Lian Li",
+      "category": "case",
+      "price": 109,
+      "description": "Airflow-focused case with a clean wood-accent design."
+    },
+    {
+      "id": 17,
+      "userId": 2,
+      "name": "Fractal Design North",
+      "brand": "Fractal Design",
+      "category": "case",
+      "price": 139,
+      "description": "Beautiful Scandinavian design with great airflow."
+    },
+    {
+      "id": 18,
+      "userId": 1,
+      "name": "Thermalright Peerless Assassin 120 SE",
+      "brand": "Thermalright",
+      "category": "cooling",
+      "price": 39,
+      "description": "Unbeatable value air cooler that rivals much pricier options."
+    },
+    {
+      "id": 19,
+      "userId": 2,
+      "name": "Arctic Liquid Freezer III Pro 360",
+      "brand": "Arctic",
+      "category": "cooling",
+      "price": 109,
+      "description": "Top-tier cooling performance at a very fair price."
+    },
+    {
+      "id": 20,
+      "userId": 1,
+      "name": "Noctua NH-D15 G2",
+      "brand": "Noctua",
+      "category": "cooling",
+      "price": 149,
+      "description": "Premium, whisper-quiet air cooling for high-end CPUs."
+    }
+  ]
+}
