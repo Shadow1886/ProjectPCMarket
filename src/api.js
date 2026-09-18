@@ -3,9 +3,17 @@ const API_URL = 'http://localhost:3030'
 
 // One helper function used by every request
 async function request(path, method = 'GET', body) {
+  const headers = { 'Content-Type': 'application/json' }
+
+  // If the user is logged in, send the token so the server knows who we are
+  const auth = JSON.parse(localStorage.getItem('auth'))
+  if (auth) {
+    headers.Authorization = `Bearer ${auth.accessToken}`
+  }
+
   const response = await fetch(API_URL + path, {
     method: method,
-    headers: { 'Content-Type': 'application/json' },
+    headers: headers,
     body: body ? JSON.stringify(body) : undefined,
   })
 
@@ -18,6 +26,12 @@ async function request(path, method = 'GET', body) {
 
   return data
 }
+
+// ---------- Authentication ----------
+// Both return { accessToken, user }
+export const login = (email, password) => request('/login', 'POST', { email, password })
+export const register = (username, email, password) =>
+  request('/register', 'POST', { username, email, password })
 
 // ---------- Parts ----------
 export const getParts = () => request('/parts?_sort=id&_order=desc')

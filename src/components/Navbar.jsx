@@ -1,6 +1,16 @@
-import { Link, NavLink } from 'react-router-dom'
+import { useContext } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../context/AuthContext'
 
 function Navbar() {
+  const { user, logout } = useContext(AuthContext)
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    logout()
+    navigate('/')
+  }
+
   return (
     <header className="navbar">
       <div className="container navbar-inner">
@@ -11,6 +21,21 @@ function Navbar() {
 
         <nav className="nav-links">
           <NavLink to="/">Home</NavLink>
+
+          {/* Different links for logged-in users and guests */}
+          {user ? (
+            <>
+              <span className="username">Hi, {user.username}</span>
+              <button className="btn" onClick={handleLogout}>
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <NavLink to="/login">Login</NavLink>
+              <NavLink to="/register">Register</NavLink>
+            </>
+          )}
         </nav>
       </div>
     </header>
